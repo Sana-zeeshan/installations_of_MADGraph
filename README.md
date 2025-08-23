@@ -39,16 +39,16 @@ First open Ubuntu desktop and install LHAPDF by browser and unzip it by followin
 it required " sudo apt install autoconf" command
 6) autoreconf -f -i
 7) ./configure --prefix=$PWD/../lhapdf_inst
-8) make
+8) make   
 For set environment of LHAPDF, go to directory cd MG5-aMC/HEPTools/lhapdfpy3/lib   
-9)export PATH=$PWD/lhapdf_inst/bin:$PATH
-10)export PDFSETS_PATH=$PWD/lhapdf_inst/share/LHAPDF:$PDFSETS_PATH
-11)export LD_LIBRARY_PATH=$PWD/lhapdf_inst/lib:$LD_LIBRARY_PATH
-12)export PYTHONPATH=$PWD/lhapdf_inst/lib64/python2.6/site-packages:$PYTHONPATH
+9)export PATH=$PWD/lhapdf_inst/bin:$PATH  
+10)export PDFSETS_PATH=$PWD/lhapdf_inst/share/LHAPDF:$PDFSETS_PATH  
+11)export LD_LIBRARY_PATH=$PWD/lhapdf_inst/lib:$LD_LIBRARY_PATH  
+12)export PYTHONPATH=$PWD/lhapdf_inst/lib64/python2.6/site-packages:$PYTHONPATH  
 
 # Installation of gfortran 
-For installation of gfortran use commamds
-1) sudo apt-get install gfortran
-2) sudo apt install build-essentials
+For installation of gfortran use commamds  
+1) sudo apt-get install gfortran  
+2) sudo apt install build-essentials  
 ## Auto-installation
 Some other packages Auto install in MadGraph shell during operating like cuttools, iregi, ninja, collier, py6 etc

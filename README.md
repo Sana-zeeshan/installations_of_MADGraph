@@ -19,6 +19,7 @@ Some other pakages are install outside the MadGraph Shell.
 2) LHAPDF
 3) gfortran
 
+
 # Installation of python
 For installation open the terminal with (Ctrl+Alt+T) and use commands
 1) sudo apt update
@@ -40,7 +41,7 @@ it required " sudo apt install autoconf" command
 6) autoreconf -f -i
 7) ./configure --prefix=$PWD/../lhapdf_inst
 8) make   
-For set environment of LHAPDF, go to directory cd MG5-aMC/HEPTools/lhapdfpy3/lib   
+For set PATH of LHAPDF, go to directory cd MG5-aMC/HEPTools/lhapdfpy3/lib   
 9)export PATH=$PWD/lhapdf_inst/bin:$PATH  
 10)export PDFSETS_PATH=$PWD/lhapdf_inst/share/LHAPDF:$PDFSETS_PATH  
 11)export LD_LIBRARY_PATH=$PWD/lhapdf_inst/lib:$LD_LIBRARY_PATH  
@@ -52,3 +53,13 @@ For installation of gfortran use commamds
 2) sudo apt install build-essentials  
 ## Auto-installation
 Some other packages Auto install in MadGraph shell during operating like cuttools, iregi, ninja, collier, py6 etc
+
+######################################### Errorr ####################################################  
+
+If path errorr shows again and again set to fix it by ./bashrc file, open the file by vi command    
+1) vi ~/.bashrc  
+2) write here "
+export LD_LIBRARY_PATH=$HOME/MG5_aMC/lhapdf_inst/lib:$LD_LIBRARY_PATH
+export PYTHONPATH=$HOME/MG5_aMC/lhapdf_inst/lib/python3.12/site-packages:$PYTHONPATH "
+3) escape with :wq  
+   

@@ -11,7 +11,8 @@ There is a file like " MG5_aMC_v3.5.7.tar.gz" in our Download file.
 5) ./MG5_aMC   (launch a MadGraph shell)  
 Some pakages are install inside the shell   
 6) \>install pythia-pgs (install pythia_pkg)  
-7) \>install MadAnalysis  (install MAdAnalysis)  
+7) \>install MadAnalysis  (install MAdAnalysis)
+8) \>install pythia-pgs (install pythia_pkg)
 
 ## Some other Pakages are required  
 Some other pakages are install outside the MadGraph Shell.  
